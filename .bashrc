@@ -12,18 +12,28 @@ esac
 stty -ixon # diable ctr+s and ctr+q workflow bindings
 shopt -s autocd # enables cd into directory merely by typing the directory name
 
+# Environment Variables
+export UNIMOD=/home/mark/Documents/Uni/ACSE/ACSE-6
+export PERSONAL=/home/mark/Documents/Personal
+export DOWNLOADS=/home/mark/Downloads
+
 # System maintanance
 alias sapt='sudo apt'
 alias sdn='sudo shutdown now'
 
 # Sourcing some env variables
 export PATH=/home/anaconda3:$PATH
+export HACKATHON=/home/mark/Documents/Uni/bp_hackathon
+
 
 # Some usefull aliases
 alias python=python3
 alias pip=pip3
+alias rm-pycache='find . -type d -name  "__pycache__" -exec rm -r {} +'
+
 alias v=vim
 
+# Navigation
 alias uni='cd /home/mark/Documents/Uni/ACSE/'
 alias personal='cd /home/mark/Documents/Personal'
 alias projects='cd /home/mark/Documents/Uni/Projects/'
@@ -32,15 +42,25 @@ alias tutoring='cd /home/mark/Documents/Tutoring/'
 alias picture='cd /home/mark/Pictures/'
 alias themes='cd /home/mark/Documents/Themes'
 
-# this alias if for the current module at ACSE; should be updated accordingly
-alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-3/'
 
+# This alias if for the current module at ACSE; should be updated accordingly
+alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-6/'
+
+# Document viewers
 alias open=xdg-open
 alias notebook=/home/mark/anaconda3/bin/jupyter-notebook
+
+# Code compilation
+alias compile='g++ -o'
+alias create_object='g++ -c'
 
 # Adding some color
 alias ls='ls -hN --color=auto --group directories-first'
 alias grep='grep --color=auto'
+
+# Protect from accidental deletion
+alias rm="rm -i"
+
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
