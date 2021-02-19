@@ -8,8 +8,7 @@ case $- in
       *) return;;
 esac
 
-# Som extra BASH options
-stty -ixon # diable ctr+s and ctr+q workflow bindings
+# Some extra BASH options
 shopt -s autocd # enables cd into directory merely by typing the directory name
 
 # Environment Variables
@@ -23,15 +22,19 @@ alias sdn='sudo shutdown now'
 
 # Sourcing some env variables
 export PATH=/home/anaconda3:$PATH
-export HACKATHON=/home/mark/Documents/Uni/bp_hackathon
-
 
 # Some usefull aliases
 alias python=python3
 alias pip=pip3
 alias rm-pycache='find . -type d -name  "__pycache__" -exec rm -r {} +'
-
+alias cl=clear
 alias v=vim
+
+# For lazy people
+cdls() {
+        cd "$@" && ls --color=auto;
+}
+alias cd=cdls
 
 # Navigation
 alias uni='cd /home/mark/Documents/Uni/ACSE/'
@@ -42,6 +45,11 @@ alias tutoring='cd /home/mark/Documents/Tutoring/'
 alias picture='cd /home/mark/Pictures/'
 alias themes='cd /home/mark/Documents/Themes'
 
+# Code Templates
+export TEMPLATES=~/Templates
+alias cppfile='cp $TEMPLATES/cpp_file.cpp $PWD'
+alias mpifile='cp $TEMPLATES/mpi_file.cpp $PWD'
+alias pythonfile='cp $TEMPLATES/python_file.py $PWD'
 
 # This alias if for the current module at ACSE; should be updated accordingly
 alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-6/'
@@ -59,7 +67,7 @@ alias ls='ls -hN --color=auto --group directories-first'
 alias grep='grep --color=auto'
 
 # Protect from accidental deletion
-alias rm="rm -i"
+alias rm="rm -I"
 
 
 # don't put duplicate lines or lines starting with space in the history.
