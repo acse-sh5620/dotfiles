@@ -47,12 +47,23 @@ alias themes='cd /home/mark/Documents/Themes'
 
 # Code Templates
 export TEMPLATES=~/Templates
-alias cppfile='cp $TEMPLATES/cpp_file.cpp $PWD'
-alias mpifile='cp $TEMPLATES/mpi_file.cpp $PWD'
-alias pythonfile='cp $TEMPLATES/python_file.py $PWD'
+
+# Template functions
+mpi_template() {
+	cp $TEMPLATES/mpi_template.cpp $PWD/$1;
+}
+
+
+cpp_template() {
+	cp $TEMPLATES/cpp_template.cpp $PWD/$1;
+}
+
+python_template() {
+	cp $TEMPLATES/python_template.py $PWD/$1;
+}
 
 # This alias if for the current module at ACSE; should be updated accordingly
-alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-6/'
+alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-7/'
 
 # Document viewers
 alias open=xdg-open
@@ -68,7 +79,6 @@ alias grep='grep --color=auto'
 
 # Protect from accidental deletion
 alias rm="rm -I"
-
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
