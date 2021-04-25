@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/usr/local/bin'
+let g:netrw_dirhist_4='/home/mark/Documents/Uni/ACSE/ACSE-5/group_assignment/group-project-stroustrup-s-sons/src'
+let g:netrw_dirhist_3='/home/mark/Documents/Personal/Old Files/WAGASCI-BabyMIND-MC/lib'
+let g:netrw_dirhist_2='/home/mark/Documents/Uni/Projects/graphs_drawing/acse3-lecture1'
+let g:netrw_dirhist_1='/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-4/3-4:1.1/0003:046D:C534.0003/0003:046D:4023.0004/power_supply/hidpp_battery_0/device'

@@ -20,6 +20,7 @@ set ruler
 set showmatch
 
 "" Kite settings
+"" Set the kite support in vim to all languages
 let g:kite_supported_languages = ['*']
 
 
