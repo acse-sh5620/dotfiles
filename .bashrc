@@ -67,7 +67,7 @@ makefile_template() {
 	cp $TEMPLATES/Makefile $PWD/Makefile;
 }
 # This alias if for the current module at ACSE; should be updated accordingly
-alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-7/'
+alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-8/'
 
 # Document viewers
 alias open=xdg-open
