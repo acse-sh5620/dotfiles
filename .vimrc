@@ -1,6 +1,6 @@
 "" Indentation options
-set autoindent
-set tabstop=4 
+"" set autoindent
+set tabstop=4
 
 "" Search options
 set hlsearch
@@ -19,6 +19,8 @@ set cursorline
 set ruler
 set showmatch
 
+"" Kite settings
+let g:kite_supported_languages = ['*']
 
 
 "" Miscellaneous options

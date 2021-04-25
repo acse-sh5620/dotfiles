@@ -12,7 +12,7 @@ esac
 shopt -s autocd # enables cd into directory merely by typing the directory name
 
 # Environment Variables
-export UNIMOD=/home/mark/Documents/Uni/ACSE/ACSE-6
+export UNIMOD=/home/mark/Documents/Uni/ACSE/ACSE-8
 export PERSONAL=/home/mark/Documents/Personal
 export DOWNLOADS=/home/mark/Downloads
 
@@ -21,7 +21,7 @@ alias sapt='sudo apt'
 alias sdn='sudo shutdown now'
 
 # Sourcing some env variables
-export PATH=/home/anaconda3:$PATH
+export PATH=/home/anaconda3/:$PATH
 
 # Some usefull aliases
 alias python=python3
@@ -39,11 +39,12 @@ alias cd=cdls
 # Navigation
 alias uni='cd /home/mark/Documents/Uni/ACSE/'
 alias personal='cd /home/mark/Documents/Personal'
-alias projects='cd /home/mark/Documents/Uni/Projects/'
+alias project='cd /home/mark/Documents/Uni/ACSE/ACSE-9-Project'
 alias downloads='cd /home/mark/Downloads/'
 alias tutoring='cd /home/mark/Documents/Tutoring/'
 alias picture='cd /home/mark/Pictures/'
 alias themes='cd /home/mark/Documents/Themes'
+alias group_project='cd /home/mark/Documents/Uni/ACSE/ACSE-4.2/'
 
 # Code Templates
 export TEMPLATES=~/Templates
@@ -62,6 +63,9 @@ python_template() {
 	cp $TEMPLATES/python_template.py $PWD/$1;
 }
 
+makefile_template() {
+	cp $TEMPLATES/Makefile $PWD/Makefile;
+}
 # This alias if for the current module at ACSE; should be updated accordingly
 alias unimod='cd /home/mark/Documents/Uni/ACSE/ACSE-7/'
 
