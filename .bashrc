@@ -12,7 +12,7 @@ esac
 shopt -s autocd # enables cd into directory merely by typing the directory name
 
 # Environment Variables
-export UNIMOD=/home/mark/Documents/Uni/ACSE/ACSE-8
+export UNIMOD=/home/mark/Documents/Uni/ACSE/ACSE-9
 export PERSONAL=/home/mark/Documents/Personal
 export DOWNLOADS=/home/mark/Downloads
 
@@ -21,10 +21,10 @@ alias sapt='sudo apt'
 alias sdn='sudo shutdown now'
 
 # Sourcing some env variables
-export PATH=/home/anaconda3/:$PATH
+export PATH=/home/mark/anaconda3/:/home/mark/anaconda3/pkgs:$PATH
 
 # Some usefull aliases
-alias python=python3
+alias python=/home/mark/anaconda3/bin/python
 alias pip=pip3
 alias rm-pycache='find . -type d -name  "__pycache__" -exec rm -r {} +'
 alias cl=clear
@@ -38,13 +38,13 @@ alias cd=cdls
 
 # Navigation
 alias uni='cd /home/mark/Documents/Uni/ACSE/'
+alias assessment='cd /home/mark/Documents/Uni/ACSE/acse-assessments/acse-8-coursework-assignment-acse-sh5620/'
 alias personal='cd /home/mark/Documents/Personal'
 alias project='cd /home/mark/Documents/Uni/ACSE/ACSE-9-Project'
 alias downloads='cd /home/mark/Downloads/'
 alias tutoring='cd /home/mark/Documents/Tutoring/'
 alias picture='cd /home/mark/Pictures/'
 alias themes='cd /home/mark/Documents/Themes'
-alias group_project='cd /home/mark/Documents/Uni/ACSE/ACSE-4.2/'
 
 # Code Templates
 export TEMPLATES=~/Templates
@@ -208,3 +208,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
+# this is for nodejs
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
